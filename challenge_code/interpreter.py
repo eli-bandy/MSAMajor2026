@@ -3,7 +3,7 @@ def main():
     while(True):
         # INPUT
         # prompt the user to enter an expression
-        expression = input("Expression (X Y Z): ")
+        expression = input("Expression (X Y Z Format): ")
 
         # PROCESS
         # validate the expression format
@@ -14,9 +14,9 @@ def main():
             print("Error: Incorrect Format")
             continue
         # validate that X and Z are integers
-        x = expression_validation[1]
-        y = expression_validation[2]
-        z = expression_validation[3]
+        x = expression_validation[0]
+        y = expression_validation[1]
+        z = expression_validation[2]
         # convert X and Z to integers
         try:
             x = int(x)
@@ -26,22 +26,42 @@ def main():
             print(f"Error: {x} and/or {z} is not an integer.")
             continue
 
-        # validate that Y is an acceptable operator (+, -, *, /)
-            # use an IF statement to determine if Y == + or - or * or /
-            # invalid format if not
-        if y != "+" or y != "-" or y != "*" or y != "/":
-            print(f"Error: {y} is not a valid operator")
-            continue
-
-
         # validate that when Y is /, Z is not 0
             # use IF: if Y == "/" and Z == 0: divide by 0 error
+        if y == "/" and z == 0:
+            print("Error: Unable to Divive by Zero")
+            continue
 
         # do the math
             # use IF statements to carry out each of 4 operations as X Y Z converted as floats
+            # create outputs for each operation
+        valid_operators = ["+", "-", "*", "/"]
+        if y not in valid_operators:
+            print(f"Error: {y} is not a valid operator.")
+            continue
 
-        # OUTPUT
-        # print the output to the user and offer user the option to reprompt
-        break
+        if y == "+":
+            print(f"{(float(x) + float(z)):,}")
+            break
+        elif y == "-":
+            print(f"{(float(x) - float(z)):,}")
+            break
+        elif y == "*":
+            print(f"{(float(x) * float(z)):,}")
+            break
+        elif y == "/":
+            print(f"{(float(x) / float(z)):,.2f}")
+            break
 
+    
+    # offer to reprompt user
+    while(True):
+        reprompt_option = input("Would you like to create another expression? Press y for yes or n for no: ")
+        if reprompt_option.lower() == "y":
+            main()
+        elif reprompt_option.lower() == "n":
+            break
+        
+# OUTPUT
+# print the output to the user
 main()
