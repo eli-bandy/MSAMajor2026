@@ -27,4 +27,60 @@ def main():
     for student in student_scores:
         print(f"{student}: {student_scores[student]}")
 
+    # create a dictionary to store car information
+    # make, model, year, value, and engine size
+    car_1 = {"make": "Ferrari", "model": "F-50", "year": 2024, "value": 500000, "engine": 4.8}
+    #get all the car information
+    print("\nGet all Car Information\n------------------------")
+
+    for key, value in car_1.items():
+        print(f"{key}: {value}")
+
+    # create a second car
+    car_2 = {"make": "Honda", "model": "Accord", "year": 2024, "value": 18000, "engine": 2.4}
+
+    # add an entry to a dictionary
+    car_1["transmission"] = "manual"
+    car_2["transmission"] = "automatic"
+
+    # create a list of dictionaries
+    dictionary_list = [car_1, car_2]
+
+    # display information for all cars
+    print("\nDisplay Information for all Cars\n------------------")
+
+    # loop over all the cars
+    for car in dictionary_list:
+        print("\nCar Information\n-------------")
+
+        # loop over the key, value pairs in the dictionary
+        for feature, value in car.items():
+            print(f"{feature}: {value}")
+
+    # create a dictionary of dictionaries
+    car_dictionary = {"Ferrari": car_1, "Honda": car_2}
+
+    # print all car information from the dictionary
+    print("\nCar Information from Dictionaries\n----------------")
+
+    for make, car in car_dictionary.items():
+        print(f"\n{make}\n-----------")
+        for feature, value in car.items():
+            print(f"{feature}: {value}")
+
+    # getting a value from a dictionary when no key exists
+    key = "transmission"
+    car_1.keys()
+    print("Finding Key using Try/Except\n---------------------")
+    try:
+        print(f"{car_1[key]}")
+    except:
+        print(f"ERROR: Key '{key}' does not exist in the dictionary.")
+    
+    print("Finding Key using Dictionary.keys()\n------------------")
+    if key not in car_1.keys():
+        print(f"ERROR: Key '{key}' does not exist in the dictionary.")
+    else:
+        print(f"{car_1[key]}")
+
 main()
