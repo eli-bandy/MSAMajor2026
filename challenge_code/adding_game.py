@@ -23,7 +23,7 @@ def get_question_number():
     # while loop until question number is valid
     while (True):
         # INPUT: prompt user to input number of questions from 3 to 10
-        question_number = input("Choose your number of question (3 - 10): ")
+        question_number = input("Choose your number of questions (3 - 10): ")
         # IF int(question_number) does not equal 3 - 10, error message and continue
         try:
             int(question_number)
@@ -42,14 +42,12 @@ def main():
     difficulty_level = int(get_difficulty_level())
     # call question number function
     question_number = int(get_question_number())
-    
-   
+
     random_generator = random.Random()
-
-
     # initialize correct = 0 and total = 0
     correct_answers = 0
     total_questions = 0
+
     # create for loop and set range to question number
     for question in range (question_number):
         # create random number generator and set peremeters for number based on value of difficulty level using IF statements
@@ -63,23 +61,53 @@ def main():
             x = random_number = random_generator.randint(100, 999)
             y = random_number = random_generator.randint(100, 999)
 
-        # create for loop to generate 2 numbers
-        for _ in range (2):
-            # number_1 = first generated number
-            number = random_number
+        # "x + y" = question
+        question = x + y
 
-        # "number_1 + number_2" = question
-        question = number[1] + number[2]
-
-        # print question
-        answer = input(f"{number[1]} + {number[2]} = ")
-        # print question
-        #INPUT: prompt user to input answer to question
-        # if answer == question, print Correct and += correct and total
         # if answer != question, print error and reprompt up to 2 more times
-        # after 3 attempts, print answer and += total
+        for attempts in range (3):
+            #INPUT: prompt user to input answer to question
+            answer = input(f"{x} + {y} = ")
+            attempts_left = 3 - attempts
+            try:
+                int(answer)
+                if int(answer) != question:
+                    if attempts_left - 1 != 0:
+                        print(f"Wrong! You have {attempts_left - 1} more attempt(s).")
+                        continue
+                    else:
+                        print(f"Wrong! The correct answer is {question}.")
+                        total_questions += 1
+                        break
+                else:
+                    print("Correct!")
+                    total_questions += 1
+                    correct_answers += 1
+                    break
+            except:
+                if attempts_left - 1 != 0:
+                    print(f"Wrong! You have {attempts_left - 1} more attempt(s).")
+                    continue
+                else:
+                    print(f"Wrong! The correct answer is {question}.")
+                    total_questions += 1
+                    break
 
     # once all questions have been answered, print correct/total and correct/total * 100 (percentage)
+    percentage = (correct_answers / total_questions) * 100
+    if percentage == 100:
+        grade = "Congratulations! You got a perfect score!"
+    elif percentage >= 89.5:
+        grade = "A"
+    elif percentage >= 79.5:
+        grade = "B"
+    elif percentage >= 69.5:
+        grade = "C"
+    elif percentage >= 59.5:
+        grade = "D"
+    else:
+        grade = "F"
+    print(f"\nResults: {grade}\n---------------\nYou got {correct_answers} out of {total_questions} questions correct.\n{percentage:.2f}%")
 
 # call main function
 main()
