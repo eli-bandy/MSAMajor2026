@@ -6,8 +6,11 @@ def main():
     auto2 = Automobile("Ferrari", "F-50", "12345", 4.8, "Bob", 2022, "Black")
 
     # change some property values
+    auto1.set_color("Gray")
+    auto2.set_owner("Charlie")
+
     # create a list of automobiles
-    auto_list = []
+    auto_list: list[Automobile] = []
     auto_list.append(auto1)
     auto_list.append(auto2)
 
