@@ -64,5 +64,5 @@ class Student:
     # create a method to print student data
     def print_student_data(self):
         student_class = self.get_class_level()
-        print(f"\nTranscript:\n-------------------------------\n{self.__first_name} {self.__last_name}\nClass Level: {student_class}, Major: {self.__major}")
+        print(f"\n{self.__first_name} {self.__last_name}\nClass Level: {student_class}, Major: {self.__major}")
         print(f"GPA: {self.__gpa}, ID: {self.__id_number}")
