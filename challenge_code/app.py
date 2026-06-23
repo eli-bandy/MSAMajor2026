@@ -18,8 +18,9 @@ def search_dictionary_list(search_key, search_value):
     student_dictionaries = sg.get_student_dictionaries()
     search_critiera_list = []
     for student_dict in student_dictionaries:
-        if search_value == student_dictionaries[search_key]:
+        if search_value.lower() == student_dict[search_key]:
             search_critiera_list.append(student_dict)
+    return search_critiera_list
 
 # create a route/view for the home page of the application
 @app.route('/', methods=['GET'])
