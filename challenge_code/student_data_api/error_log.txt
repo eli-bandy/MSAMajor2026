@@ -1,0 +1,38 @@
+2026-06-26 10:10:17.472386: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:10:17.473388: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:11:48.961094: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:11:48.963092: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:33.443326: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:33.446105: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:33.613192: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:33.613192: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:33.767087: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:33.767087: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:33.930437: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:33.930437: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:34.115128: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:34.116126: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:35.364246: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:35.364246: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:36.613299: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:36.613299: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:37.284016: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:37.284890: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:37.581217: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:37.581217: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:37.818542: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:37.818542: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:37.994767: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:37.995766: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:38.316616: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:38.316616: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:13:43.907180: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:13:43.908180: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:14:01.677147: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:14:01.677147: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:14:17.470480: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:14:17.471480: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:14:19.741604: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:14:19.741604: Error on line 3 of the file: credit_hours or gpa have incorrect format.
+2026-06-26 10:14:19.741604: Error on line 2 of the file. Data has 5 items, but should have 6 items.
+2026-06-26 10:14:19.741604: Error on line 3 of the file: credit_hours or gpa have incorrect format.
